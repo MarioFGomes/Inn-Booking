@@ -31,7 +31,7 @@ public class Booking
             _ => this.Satus
         };
     }
-    public Booking()
+    public Booking() // Reservas
     {
         this.Satus=Status.Created;
     }

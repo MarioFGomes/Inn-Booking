@@ -5,4 +5,5 @@ public interface IGuestRepository
 {
     Task<Guest> Get(int Id);
     Task<int> Create(Guest guest);
+    Task Update(Guest guest);
 }

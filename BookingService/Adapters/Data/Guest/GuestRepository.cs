@@ -24,4 +24,11 @@ public class GuestRepository : IGuestRepository
     {
         throw new NotImplementedException();
     }
+
+    public Task Update(Domain.Entities.Guest guest) 
+    {
+        _db.Update(guest);
+
+        return Task.CompletedTask;
+    }
 }
